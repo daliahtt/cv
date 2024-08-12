@@ -282,38 +282,5 @@ body {
     .contactinfo .language .percent {
         background: #555;
     }
-
-    .contactinfo .language .percent div {
-        background: #a7739f;
-    }
 }
 
-/* Adjust container layout for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        margin: 20px;
-    }
-
-    .left-side,
-    .right-side {
-        padding: 20px;
-    }
-
-    .profileText h2 {
-        font-size: 1.2em;
-    }
-
-    .contactinfo ul,
-    .right-side .about ul {
-        padding-left: 0;
-    }
-
-    .contactinfo ul li {
-        font-size: 0.9em;
-    }
-
-    .right-side .form button {
-        width: 100%;
-    }
-}
