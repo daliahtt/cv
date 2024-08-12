@@ -3,157 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>CYBERSECURITY CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bootstrapmade.com/demo/Kelly/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootstrapmade.com/demo/Kelly/assets/vendor/icofont/icofont.min.css">
+    <link rel="stylesheet" href="https://bootstrapmade.com/demo/Kelly/assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://bootstrapmade.com/demo/Kelly/assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://bootstrapmade.com/demo/Kelly/assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Welcome Message -->
-    <div id="welcomeMessage" class="welcome-message">Welcome to my CV!</div>
-
-    <div class="container">
-        <div class="left-side">
-            <div class="profileText">
-                <div class="imgBx">
-                    <img src="images.webp" alt="Profile Image">
-                </div>
-                <h2>داليا صالح الهذال<br><span>امن سيبراني</span></h2>
-            </div>
-            <div class="contactinfo">
-                <h3 class="title">Contact Info</h3>
+    <div class="welcome-message">
+        Welcome to My CV!
+    </div>
+    <!-- Header -->
+    <header id="header" class="fixed-top bg-primary">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo mr-auto">CYBERSECURITY CV</h1>
+            <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="text">0512345678</span></li>
-                    <li><span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="text">DaliaExample@gmail.com</span></li>
-                    <li><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span><span class="text">www.linkedin.com/in/me</span></li>
-                    <li><span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span><span class="text">www.mywebsite.com</span></li>
-                    <li><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="text">Saudi Arabia, Al-Qassim</span></li>
+                    <li class="active"><a href="#hero">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="contactinfo language">
-                    <h3 class="title">Languages</h3>
-                    <ul>
-                        <li><span class="text">English</span><span class="percent"><div style="width: 90%;"></div></span></li>
-                        <li><span class="text">Arabic</span><span class="percent"><div style="width: 100%;"></div></span></li>
-                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container">
+            <h1>داليا صالح الهذال</h1>
+            <p>Cybersecurity Student</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Profile Section -->
+        <section id="profile" class="profile section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="profile-img text-center">
+                            <img src="images/profile.jpg" alt="Profile Picture" class="img-fluid profile-img">
+                        </div>
+                        <h2 class="section-title text-center">Profile</h2>
+                        <p class="text-center">Enthusiastic and motivated cybersecurity student with hands-on experience in ethical hacking, network security, and vulnerability assessment. Skilled in Python, JavaScript, and security tools.</p>
+                    </div>
+
+                    <!-- Skills Section moved here -->
+                    <div class="col-lg-8">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="mb-4">
+                            <h4>Python</h4>
+                            <div class="skills-bar">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4>JavaScript</h4>
+                            <div class="skills-bar">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4>Network Security</h4>
+                            <div class="skills-bar">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4>Ethical Hacking</h4>
+                            <div class="skills-bar">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="contactinfo education">
-                <h3 class="title">Education</h3>
-                <ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-bg">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <ul class="list-unstyled">
                     <li>
-                        <h5>2006-2019</h5>
-                        <h4>High School</h4>
-                        <h4>Al-Qassim High School</h4>
-                        <h5>2021-2024</h5>
                         <h4>Buraydah Private College</h4>
+                        <p>Bachelor of Science in Cybersecurity</p>
+                        <p>2021 - 2024</p>
+                    </li>
+                    <li>
+                        <h4>Al-Qassim High School</h4>
+                        <p>High School Diploma</p>
+                        <p>2006 - 2019</p>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="right-side">
-            <div class="about">
-                <h2 class="title2">Profile</h2>
-                <p>Experienced with programming languages such as Python and Java for security scripting and automation. Knowledgeable in network protocols, encryption methods, and threat detection techniques.</p>
-            </div>
-            <div class="about">
-                <h2 class="title2">الخبرات</h2>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2024-متدربه لدى بانوراما لتقنيه المعلومات</h5>
-                        <h5>برمجه الويب وتصميم المواقع </h5>
-                    </div>
-                    <div class="text">
-                        <h4>طالبه</h4>
-                        <p>متمرسه في لغات البرمجة مثل بايثون وجافا لأغراض الأمن والبرمجة الآلية. ملمه ببروتوكولات الشبكات وطرق التشفير وتقنيات كشف التهديدات.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about skills">
-                <h2 class="title2">Professional Skills</h2>
-                <div class="box">
-                    <h4>HTML</h4>
-                    <div class="percent">
-                        <div style="width: 95%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>CSS</h4>
-                    <div class="percent">
-                        <div style="width: 92%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>JavaScript</h4>
-                    <div class="percent">
-                        <div style="width: 92%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>Python</h4>
-                    <div class="percent">
-                        <div style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>C++</h4>
-                    <div class="percent">
-                        <div style="width: 85%;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="about interest">
-                <h2 class="title2">Interests</h2>
-                <ul>
-                    <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
-                    <li><i class="fa fa-code" aria-hidden="true"></i> Coding</li>
-                    <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
-                    <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-bg">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>Internship at Panorama Information Technology</h4>
+                        <p>Web Development and Security</p>
+                        <p>2024 - Present</p>
+                    </li>
                 </ul>
             </div>
-            <!-- Contact Form -->
-            <div class="about form">
-                <h2 class="title2">تواصل معي</h2>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-bg">
+            <div class="container">
+                <h2 class="section-title">تواصل معي</h2>
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="الاسم">الاسم</label>
                         <input type="text" id="الاسم" name="الاسم" class="form-control" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="ايميل">ايميل</label>
                         <input type="email" id="ايميل" name="ايميل" class="form-control" required>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="العنوان">العنوان</label>
-                        <input type="text" id="العنوان" name="العنوان" class="form-control" required>
-                    </div>
-                    
                     <div class="form-group">
                         <label for="الرساله">الرساله</label>
                         <textarea id="الرساله" name="الرساله" class="form-control" rows="4" required></textarea>
                     </div>
-                    
                     <button type="submit" class="btn btn-primary">Send</button>
                 </form>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <script>
-        // Show welcome message for 5 seconds and then hide it
-        window.onload = function() {
-            var message = document.getElementById('welcomeMessage');
-            setTimeout(function() {
-                message.style.opacity = '0';
-                setTimeout(function() {
-                    message.style.display = 'none';
-                }, 1000); // Wait for the fade-out transition to finish
-            }, 5000); // Show the message for 5 seconds
-        };
-    </script>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <div class="copyright">
+                        &copy; 2024 داليا صالح الهذال. All Rights Reserved.
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="credits">
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://bootstrapmade.com/demo/Kelly/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="https://bootstrapmade.com/demo/Kelly/assets/js/main.js"></script>
 </body>
 </html>
+
+
+
 
 
 
