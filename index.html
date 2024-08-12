@@ -16,9 +16,6 @@
         body.dark-mode .container {
             background-color: #1f1f1f;
         }
-        body.dark-mode .contactinfo, body.dark-mode .about {
-            border-color: #333;
-        }
         /* Light Mode */
         body.light-mode {
             background-color: #ffffff;
@@ -27,8 +24,46 @@
         body.light-mode .container {
             background-color: #f9f9f9;
         }
-        body.light-mode .contactinfo, body.light-mode .about {
-            border-color: #ddd;
+        /* Additional Styles */
+        .percent div {
+            background-color: #007bff;
+            height: 5px;
+            border-radius: 2px;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        /* Animation for the "title2" */
+        .title2 {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .title2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #007bff;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        .title2:hover::after {
+            transform: translateX(0);
         }
     </style>
 </head>
@@ -38,12 +73,12 @@
             <div class="col-md-4 left-side">
                 <div class="profileText">
                     <div class="imgBx">
-                        <img src="file:///C:/Users/Newtech/OneDrive/Desktop/images.jpg" alt="Profile Image">
+                        <img src="file:///C:/Users/Newtech/OneDrive/Desktop/images.jpg" alt="Profile Image" class="img-fluid">
                     </div>
-                    <h2>داليا الهذال<br><span>Cyber security</span></h2>
+                    <h2>داليا الهذال<br><span>Cyber Security</span></h2>
                 </div>
                 <div class="contactinfo">
-                    <h3 class="title">Contact info</h3>
+                    <h3 class="title">معلومات الاتصال</h3>
                     <ul>
                         <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
                             <span class="text">0512345678</span>
@@ -52,7 +87,7 @@
                             <span class="text">DaliaExample@gmail.com</span>
                         </li>
                         <li><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                            <span class="text">www.linkedin.com/me</span>
+                            <span class="text">www.linkedin.com/in/me</span>
                         </li>
                         <li><span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
                             <span class="text">www.mywebsite.com</span>
@@ -62,14 +97,14 @@
                         </li>
                     </ul>
                     <div class="contactinfo language">
-                        <h3 class="title">Languages</h3>
+                        <h3 class="title">اللغات</h3>
                         <ul>
-                            <li><span class="text">English</span>
+                            <li><span class="text">الإنجليزية</span>
                                 <span class="percent">
                                     <div style="width: 90%;"></div>
                                 </span>
                             </li>
-                            <li><span class="text">Arabic</span>
+                            <li><span class="text">العربية</span>
                                 <span class="percent">
                                     <div style="width: 100%;"></div>
                                 </span>
@@ -78,38 +113,38 @@
                     </div>
                 </div>
                 <div class="contactinfo education">
-                    <h3 class="title">Education</h3>
+                    <h3 class="title">التعليم</h3>
                     <ul>
                         <li>
                             <h5>2005-2018</h5>
-                            <h4>High School</h4>
-                            <h4>Al-Qassim High School</h4>
+                            <h4>المرحلة الثانوية</h4>
+                            <h4>مدرسة القصيم الثانوية</h4>
                             <h5>2021-2024</h5>
-                            <h4>Cyber Security University</h4>
+                            <h4>جامعة الأمن السيبراني</h4>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-8 right-side">
                 <div class="about">
-                    <h2 class="title2">Profile</h2>
+                    <h2 class="title2">الملف الشخصي</h2>
                     <p>داليا الهذال<br>العمر 23<br>طالبة في كليات بريدة الأهلية</p>
                 </div>
                 <div class="about">
-                    <h2 class="title2">Experience</h2>
+                    <h2 class="title2">الخبرة</h2>
                     <div class="box">
                         <div class="year_company">
                             <h5>2021-present</h5>
-                            <h5>Cyber Security University</h5>
+                            <h5>جامعة الأمن السيبراني</h5>
                         </div>
                         <div class="text">
-                            <h4>Student</h4>
-                            <p>Experienced with programming languages such as Python and Java for security scripting and automation. Knowledgeable in network protocols, encryption methods, and threat detection techniques.</p>
+                            <h4>طالبة</h4>
+                            <p>تجربة في لغات البرمجة مثل Python وJava للأمان البرمجي والأتمتة. معرفة ببروتوكولات الشبكة وطرق التشفير وتقنيات الكشف عن التهديدات.</p>
                         </div>
                     </div>
                 </div>
                 <div class="about skills">
-                    <h2 class="title2">Professional Skills</h2>
+                    <h2 class="title2">المهارات المهنية</h2>
                     <div class="box">
                         <h4>HTML</h4>
                         <div class="percent">
@@ -142,31 +177,31 @@
                     </div>
                 </div>
                 <div class="about interest">
-                    <h2 class="title2">Interests</h2>
+                    <h2 class="title2">الاهتمامات</h2>
                     <ul>
-                        <li><i class="fa fa-book" aria-hidden="true"></i>Reading</li>
-                        <li><i class="fa fa-code" aria-hidden="true"></i>Coding</li>
-                        <li><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</li>
-                        <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
+                        <li><i class="fa fa-book" aria-hidden="true"></i>القراءة</li>
+                        <li><i class="fa fa-code" aria-hidden="true"></i>البرمجة</li>
+                        <li><i class="fa fa-cutlery" aria-hidden="true"></i>الطبخ</li>
+                        <li><i class="fa fa-gamepad" aria-hidden="true"></i>الألعاب</li>
                     </ul>
                 </div>
                 <!-- Contact Form -->
                 <div class="about contact-form">
-                    <h2 class="title2">Contact Us</h2>
+                    <h2 class="title2">اتصل بنا</h2>
                     <form action="send_email.php" method="POST">
                         <div class="form-group">
-                            <label for="name">Name:</label>
+                            <label for="name">الاسم:</label>
                             <input type="text" id="name" name="name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email:</label>
+                            <label for="email">البريد الإلكتروني:</label>
                             <input type="email" id="email" name="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message:</label>
+                            <label for="message">الرسالة:</label>
                             <textarea id="message" name="message" class="form-control" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="btn btn-primary">إرسال</button>
                     </form>
                 </div>
             </div>
@@ -191,4 +226,5 @@
     </script>
 </body>
 </html>
+
 
