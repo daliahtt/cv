@@ -1,7 +1,5 @@
-/* Import the fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800,900&display=swap');
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,80 +9,20 @@
 
 body {
     background-color: #f0f0f0;
-    color: #333;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-top: 80px; /* Adjust for fixed header */
-}
-
-/* Header Styles */
-header {
-    background-color: #0056b3;
-    color: #ffffff;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo {
-    font-size: 2em;
-    font-weight: 700;
-}
-
-header .nav-menu {
-    margin-top: 10px;
-}
-
-header .nav-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-header .nav-menu ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header .nav-menu ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-header .nav-menu ul li a.active,
-header .nav-menu ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section Styles */
-#hero {
-    background: #0056b3;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-#hero h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-}
-
-#hero p {
-    font-size: 1.2em;
-}
-
-/* Main Content Styles */
-main {
-    flex: 1;
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
@@ -97,135 +35,33 @@ main {
 .skills-bar {
     background-color: #e9ecef;
     border-radius: 3px;
+    height: 5px;
+    margin-top: 5px;
 }
 
 .skills-bar .progress-bar {
     background-color: #bb83b3;
+    height: 100%;
+    line-height: 1.6;
 }
 
-/* Section Titles */
 .section-title {
     color: #bb83b3;
     margin-bottom: 20px;
 }
 
-/* Education and Experience Styles */
-ul.list-unstyled {
-    padding-left: 0;
+.dark-mode .container {
+    background-color: #333;
+    color: #f0f0f0;
 }
 
-ul.list-unstyled li {
-    margin-bottom: 15px;
-}
-
-ul.list-unstyled li h4 {
-    color: #bb83b3;
-}
-
-/* Contact Form Styles */
-form {
-    margin-top: 20px;
-}
-
-form .form-group label {
-    font-weight: bold;
-}
-
-form .form-control {
-    border-radius: 5px;
-}
-
-form .btn-primary {
-    background-color: #bb83b3;
-    border: none;
-    border-radius: 5px;
-}
-
-form .btn-primary:hover {
+.dark-mode .skills-bar .progress-bar {
     background-color: #a7739f;
 }
 
-/* Footer Styles */
-footer {
-    background: #0056b3;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #333;
-        color: #f0f0f0;
-    }
-
-    header {
-        background-color: #1a1a1a;
-        color: #f0f0f0;
-    }
-
-    header .nav-menu ul li a {
-        color: #f0f0f0;
-    }
-
-    header .nav-menu ul li a.active,
-    header .nav-menu ul li a:hover {
-        text-decoration: underline;
-    }
-
-    #hero {
-        background: #1a1a1a;
-        color: #f0f0f0;
-    }
-
-    .skills-bar .progress-bar {
-        background-color: #a7739f;
-    }
-
-    footer {
-        background: #1a1a1a;
-        color: #f0f0f0;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .nav-menu ul {
-        text-align: center;
-    }
-
-    header .nav-menu ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-
-    #hero h1 {
-        font-size: 2em;
-    }
-
-    #hero p {
-        font-size: 1em;
-    }
-}
-
-/* Welcome Message Animation */
-.welcome-message {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #0056b3;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 9999;
-    animation: fadeIn 2s ease-in-out, fadeOut 1s 4s forwards;
+/* Animation example */
+.animated {
+    animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -233,9 +69,11 @@ footer {
     to { opacity: 1; }
 }
 
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
