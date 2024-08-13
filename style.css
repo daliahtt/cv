@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800,900&display=swap');
 
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -206,10 +205,6 @@ body {
     margin-bottom: 20px;
 }
 
-.right-side .form .form-group {
-    margin-bottom: 15px;
-}
-
 .right-side .form label {
     display: block;
     margin-bottom: 5px;
@@ -220,6 +215,7 @@ body {
 .right-side .form textarea {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -268,6 +264,10 @@ body {
         background: #6c4f77;
     }
 
+    .profileText h2 {
+        color: #f0f0f0;
+    }
+
     .contactinfo .title,
     .right-side .about .title2 {
         color: #f0f0f0;
@@ -303,3 +303,4 @@ body {
         background-color: #6c4f77;
     }
 }
+
