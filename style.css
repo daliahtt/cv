@@ -282,25 +282,6 @@ body {
     .contactinfo .language .percent {
         background: #555;
     }
-
-    .contactinfo .language .percent div,
-    .right-side .about .box .percent div {
-        background: #a7739f;
-    }
-
-    .right-side .form input,
-    .right-side .form textarea {
-        background-color: #555;
-        color: #f0f0f0;
-        border: 1px solid #666;
-    }
-
-    .right-side .form button {
-        background-color: #a7739f;
-    }
-
-    .welcome-message {
-        background-color: #6c4f77;
-    }
 }
+
 
